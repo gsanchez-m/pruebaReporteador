@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:TalendProperties="http://www.talend.org/properties">
+  <TalendProperties:Property xmi:id="_p3xt4OF-EeqnEa01cpaLHw" id="_p3vRoOF-EeqnEa01cpaLHw" label="CursosAprobados" purpose="Reporte &quot;Cursos aprobados&quot; / &quot;Histórico cursos&quot;" description="Reporte &quot;Cursos aprobados&quot; / &quot;Histórico cursos&quot;" version="0.1" statusCode="" item="_p3y8AOF-EeqnEa01cpaLHw" displayName="CursosAprobados">
+    <author href="../talend.project#_-qWVIcd4EeqSd8ppPpX0sw"/>
+    <additionalProperties xmi:id="_p31_UOF-EeqnEa01cpaLHw" key="created_product_fullname" value="Talend Open Studio for Data Integration"/>
+    <additionalProperties xmi:id="_p32mYOF-EeqnEa01cpaLHw" key="created_product_version" value="7.3.1.20200219_1130"/>
+    <additionalProperties xmi:id="_p32mYeF-EeqnEa01cpaLHw" key="created_date" value="2020-08-18T15:14:28.037-0400"/>
+    <additionalProperties xmi:id="_p32mYuF-EeqnEa01cpaLHw" key="modified_product_fullname" value="Talend Open Studio for Data Integration"/>
+    <additionalProperties xmi:id="_p32mY-F-EeqnEa01cpaLHw" key="modified_product_version" value="7.3.1.20200219_1130"/>
+    <additionalProperties xmi:id="_p32mZOF-EeqnEa01cpaLHw" key="modified_date" value="2020-08-21T15:22:51.066-0400"/>
+  </TalendProperties:Property>
+  <TalendProperties:ItemState xmi:id="_p3xt4eF-EeqnEa01cpaLHw" path="" locked="true" lockDate="2020-08-20T10:10:14.892-0400">
+    <locker href="../talend.project#_-qWVIcd4EeqSd8ppPpX0sw"/>
+  </TalendProperties:ItemState>
+  <TalendProperties:ProcessItem xmi:id="_p3y8AOF-EeqnEa01cpaLHw" property="_p3xt4OF-EeqnEa01cpaLHw" state="_p3xt4eF-EeqnEa01cpaLHw">
+    <process href="CursosAprobados_0.1.item#/"/>
+  </TalendProperties:ProcessItem>
+</xmi:XMI>

@@ -1,0 +1,1127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ProcessType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMapper="http://www.talend.org/mapper" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" defaultContext="Default" jobType="Standard">
+  <context confirmationNeeded="false" name="Default">
+    <contextParameter comment="database?" name="database" prompt="database?" promptNeeded="false" repositoryContextId="_SvqhYNDsEeqVzcFIj8LQEQ" type="id_String" value=""/>
+    <contextParameter comment="" name="destination" prompt="destination?" promptNeeded="false" repositoryContextId="_SvqhYNDsEeqVzcFIj8LQEQ" type="id_String" value="C:/TEMP/"/>
+    <contextParameter comment="file" name="filename" prompt="filename?" promptNeeded="false" repositoryContextId="_SvqhYNDsEeqVzcFIj8LQEQ" type="id_String" value="C:/TEMP/conexionSMUProd.txt"/>
+    <contextParameter comment="host?" name="host" prompt="host?" promptNeeded="false" repositoryContextId="_SvqhYNDsEeqVzcFIj8LQEQ" type="id_String" value=""/>
+    <contextParameter comment="password?" name="password" prompt="password?" promptNeeded="false" repositoryContextId="_SvqhYNDsEeqVzcFIj8LQEQ" type="id_Password" value=""/>
+    <contextParameter comment="port?" name="port" prompt="port?" promptNeeded="false" repositoryContextId="_SvqhYNDsEeqVzcFIj8LQEQ" type="id_String" value=""/>
+    <contextParameter comment="username?" name="username" prompt="username?" promptNeeded="false" repositoryContextId="_SvqhYNDsEeqVzcFIj8LQEQ" type="id_String" value=""/>
+  </context>
+  <context confirmationNeeded="false" name="test">
+    <contextParameter comment="database?" name="database" prompt="database?" promptNeeded="false" repositoryContextId="_SvqhYNDsEeqVzcFIj8LQEQ" type="id_String" value=""/>
+    <contextParameter comment="" name="destination" prompt="destination?" promptNeeded="false" repositoryContextId="_SvqhYNDsEeqVzcFIj8LQEQ" type="id_String" value="C:/TEMP/"/>
+    <contextParameter comment="file" name="filename" prompt="filename?" promptNeeded="false" repositoryContextId="_SvqhYNDsEeqVzcFIj8LQEQ" type="id_String" value="C:/TEMP/conexionSMUProd.txt"/>
+    <contextParameter comment="host?" name="host" prompt="host?" promptNeeded="false" repositoryContextId="_SvqhYNDsEeqVzcFIj8LQEQ" type="id_String" value=""/>
+    <contextParameter comment="password?" name="password" prompt="password?" promptNeeded="false" repositoryContextId="_SvqhYNDsEeqVzcFIj8LQEQ" type="id_Password" value=""/>
+    <contextParameter comment="port?" name="port" prompt="port?" promptNeeded="false" repositoryContextId="_SvqhYNDsEeqVzcFIj8LQEQ" type="id_String" value=""/>
+    <contextParameter comment="username?" name="username" prompt="username?" promptNeeded="false" repositoryContextId="_SvqhYNDsEeqVzcFIj8LQEQ" type="id_String" value=""/>
+  </context>
+  <parameters>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_X" value="0" show="false"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" value="0" show="false"/>
+    <elementParameter field="TEXT" name="REPOSITORY_CONNECTION_ID" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_PROPERTY_TYPENAME" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_DISTRIBUTION" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_VERSION" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_KERBEROS" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_PRINCIPAL" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_USERNAME" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_GROUP" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_USE_KEYTAB" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_KT_PRINCIPAL" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_KEY_TAB" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_OO_KERBEROS" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_END_POINT" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_JOB_TRACKER_ENDPOINT" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_END_POINT" value="" show="false"/>
+    <elementParameter field="CHECK" name="IMPLICITCONTEXT_USE_PROJECT_SETTINGS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="STATANDLOG_USE_PROJECT_SETTINGS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="MULTI_THREAD_EXECATION" value="false"/>
+    <elementParameter field="CHECK" name="IMPLICIT_TCONTEXTLOAD" value="false"/>
+    <elementParameter field="RADIO" name="FROM_FILE_FLAG_IMPLICIT_CONTEXT" value="false" show="false"/>
+    <elementParameter field="RADIO" name="FROM_DATABASE_FLAG_IMPLICIT_CONTEXT" value="false" show="false"/>
+    <elementParameter field="FILE" name="IMPLICIT_TCONTEXTLOAD_FILE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="OVERRIDE_ENCODING_FLAG" value="false" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="OVERRIDE_ENCODING_IN_EXTRA" value="ISO-8859-15" show="false"/>
+    <elementParameter field="TECHNICAL" name="OVERRIDE_ENCODING_IN_EXTRA:ENCODING_TYPE" value="ISO-8859-15" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE_IMPLICIT_CONTEXT" value="" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION_IMPLICIT_CONTEXT" value="" show="false"/>
+    <elementParameter field="TEXT" name="URL_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR_IMPLICIT_CONTEXT" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="HOST_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PORT_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DBNAME_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" value="enc:system.encryption.key.v1:Q9iN7WdKQ5k9O3uiH+Is5K1WLpvIUHd5w3JKBjx1" show="false"/>
+    <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="LOAD_NEW_VARIABLE" value="Warning" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="NOT_LOAD_OLD_VARIABLE" value="Warning" show="false"/>
+    <elementParameter field="CHECK" name="PRINT_OPERATIONS" value="false" show="false"/>
+    <elementParameter field="CHECK" name="DISABLE_ERROR" value="false" show="false"/>
+    <elementParameter field="CHECK" name="DISABLE_WARNINGS" value="false" show="false"/>
+    <elementParameter field="CHECK" name="DISABLE_INFO" value="false" show="false"/>
+    <elementParameter field="CHECK" name="ON_STATCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_LOGCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_METERCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_CONSOLE_FLAG" value="false" show="false"/>
+    <elementParameter field="CHECK" name="ON_FILES_FLAG" value="false" show="false"/>
+    <elementParameter field="DIRECTORY" name="FILE_PATH" value="&quot;C:/TALEND/TOS_DI-Win32-20200219_1130-V7.3.1/workspace/.metadata&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FILENAME_STATS" value="&quot;stats_file.txt&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FILENAME_LOGS" value="&quot;logs_file.txt&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FILENAME_METTER" value="&quot;meter_file.txt&quot;" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="ISO-8859-15" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15" show="false"/>
+    <elementParameter field="CHECK" name="ON_DATABASE_FLAG" value="false" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE" value="tJDBCOutput" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="ORACLE_12" show="false"/>
+    <elementParameter field="TEXT" name="URL" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PORT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DBNAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:1QFpa/u5Wriev6b8NwqqD7/CExbRmPezNI6WWRPQ" show="false"/>
+    <elementParameter field="FILE" name="DBFILE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE_STATS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE_LOGS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE_METER" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_RUNTIME_ERRORS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_USER_ERRORS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_USER_WARNING" value="true" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_REALTIME_STATS" value="false" show="false"/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_HEADERID" value="" show="false"/>
+    <elementParameter field="CHECK" name="HEADER_ENABLED" value="false" show="false"/>
+    <elementParameter field="TEXT" name="HEADER_LIBRARY" value="" show="false"/>
+    <elementParameter field="TEXT" name="HEADER_CODE" value="" show="false"/>
+    <elementParameter field="TEXT" name="HEADER_IMPORT" value="" show="false"/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_FOOTERID" value="" show="false"/>
+    <elementParameter field="CHECK" name="FOOTER_ENABLED" value="false" show="false"/>
+    <elementParameter field="TEXT" name="FOOTER_LIBRARY" value="" show="false"/>
+    <elementParameter field="TEXT" name="FOOTER_CODE" value="" show="false"/>
+    <elementParameter field="TEXT" name="FOOTER_IMPORT" value="" show="false"/>
+    <routinesParameter id="_EQalwMd5EeqSd8ppPpX0sw" name="DataOperation"/>
+    <routinesParameter id="_ERKzsMd5EeqSd8ppPpX0sw" name="Mathematical"/>
+    <routinesParameter id="_ERduoMd5EeqSd8ppPpX0sw" name="Numeric"/>
+    <routinesParameter id="_ERsYIMd5EeqSd8ppPpX0sw" name="Relational"/>
+    <routinesParameter id="_ER2wMMd5EeqSd8ppPpX0sw" name="StringHandling"/>
+    <routinesParameter id="_ESGn0Md5EeqSd8ppPpX0sw" name="TalendDataGenerator"/>
+    <routinesParameter id="_ESUDMMd5EeqSd8ppPpX0sw" name="TalendDate"/>
+    <routinesParameter id="_ESoMQMd5EeqSd8ppPpX0sw" name="TalendStringUtil"/>
+    <routinesParameter id="_ESY7sMd5EeqSd8ppPpX0sw" name="TalendString"/>
+  </parameters>
+  <node componentName="tFileInputDelimited" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="128" posY="32">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileInputDelimited_1" show="false"/>
+    <elementParameter field="LABEL" name="FILENAMETEXT" value="&quot;When the input source is a stream or a zip file,footer and random shouldn't be bigger than 0.&quot;"/>
+    <elementParameter field="FILE" name="FILENAME" value="context.filename"/>
+    <elementParameter field="CHECK" name="CSV_OPTION" value="false"/>
+    <elementParameter field="TEXT" name="ROWSEPARATOR" value="&quot;\n&quot;"/>
+    <elementParameter field="OPENED_LIST" name="CSVROWSEPARATOR" value="&quot;\n&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;;&quot;"/>
+    <elementParameter field="TEXT" name="ESCAPE_CHAR" value="&quot;&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="TEXT_ENCLOSURE" value="&quot;&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="HEADER" value="0"/>
+    <elementParameter field="TEXT" name="FOOTER" value="0"/>
+    <elementParameter field="TEXT" name="LIMIT" value=""/>
+    <elementParameter field="CHECK" name="REMOVE_EMPTY_ROW" value="true"/>
+    <elementParameter field="CHECK" name="UNCOMPRESS" value="false"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
+    <elementParameter field="DIRECTORY" name="TEMP_DIR" value="&quot;C:/Users/gsanchez/Documents/TOS_DI-Win32-20200219_1130-V7.3.1/workspace&quot;" show="false"/>
+    <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
+    <elementParameter field="TEXT" name="THOUSANDS_SEPARATOR" value="&quot;,&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DECIMAL_SEPARATOR" value="&quot;.&quot;" show="false"/>
+    <elementParameter field="CHECK" name="RANDOM" value="false"/>
+    <elementParameter field="TEXT" name="NB_RANDOM" value="10" show="false"/>
+    <elementParameter field="CHECK" name="TRIMALL" value="false"/>
+    <elementParameter field="TABLE" name="TRIMSELECT">
+      <elementValue elementRef="SCHEMA_COLUMN" value="key"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="value"/>
+      <elementValue elementRef="TRIM" value="false"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="CHECK_FIELDS_NUM" value="false"/>
+    <elementParameter field="CHECK" name="CHECK_DATE" value="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="SPLITRECORD" value="false"/>
+    <elementParameter field="CHECK" name="ENABLE_DECODE" value="false"/>
+    <elementParameter field="TABLE" name="DECODE_COLS" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="key"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="value"/>
+      <elementValue elementRef="DECODE" value="false"/>
+    </elementParameter>
+    <elementParameter field="TEXT" name="DESTINATION" value="" show="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="100" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tFileInputDelimited_1">
+      <column comment="" key="false" length="-1" name="key" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="value" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="REJECT" name="REJECT">
+      <column comment="" key="false" length="-1" name="key" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="value" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tContextLoad" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="352" posY="32">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tContextLoad_1" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="LOAD_NEW_VARIABLE" value="Warning"/>
+    <elementParameter field="CLOSED_LIST" name="NOT_LOAD_OLD_VARIABLE" value="Warning"/>
+    <elementParameter field="CHECK" name="PRINT_OPERATIONS" value="true"/>
+    <elementParameter field="CHECK" name="DISABLE_ERROR" value="false"/>
+    <elementParameter field="CHECK" name="DISABLE_WARNINGS" value="true"/>
+    <elementParameter field="CHECK" name="DISABLE_INFO" value="true"/>
+    <elementParameter field="CHECK" name="DIEONERROR" value="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="Conexion"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tContextLoad_1">
+      <column defaultValue="" key="false" length="255" name="key" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="value" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tMSSqlConnection" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="128" posY="224">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBConnection_1" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DRIVER" value="JTDS"/>
+    <elementParameter field="TEXT" name="HOST" value="context.host"/>
+    <elementParameter field="TEXT" name="TYPE" value="MSSQL" show="false"/>
+    <elementParameter field="TEXT" name="PORT" value="context.port"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME" value="context.database"/>
+    <elementParameter field="TEXT" name="USER" value="context.username"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:uxXzQv3/fuwf4xkZFHbKGo/i/XsIcie9sECEPmir5KOrPHAh4xfFucKpFDg="/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="USE_SHARED_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="SHARED_CONNECTION_NAME" value="" show="false"/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="AUTO_COMMIT" value="false"/>
+    <elementParameter field="CHECK" name="SHARE_IDENTITY_SETTING" value="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <node componentName="tMSSqlInput" componentVersion="0.102" offsetLabelX="5" offsetLabelY="6" posX="320" posY="416">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBInput_1" show="false"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tDBConnection_1"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DRIVER" value="JTDS" show="false"/>
+    <elementParameter field="TEXT" name="TYPE" value="MSSQL" show="false"/>
+    <elementParameter field="TEXT" name="PORT" value="&quot;1433&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DB_SCHEMA" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DBNAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:Qau8gOyt2WpqyUb22CJ4aWgFdh+mr0+uMrbl/E4o" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;CREATE TABLE #ReporteGlobalMallas &#xD;&#xA;(Id INT IDENTITY(1, 1)  PRIMARY KEY,&#xD;&#xA;Fila BIGINT,&#xD;&#xA;[Id Malla] INT,&#xD;&#xA;[Malla] VARCHAR(255),&#xD;&#xA;[Fecha Creación] VARCHAR(255),&#xD;&#xA;[Estado] VARCHAR(255),&#xD;&#xA;IdNominaMalla INT,&#xD;&#xA;Escuela_Id INT,&#xD;&#xA;[Escuela] VARCHAR(255),&#xD;&#xA;[Versión Malla] INT,&#xD;&#xA;[Vigencia Versión] VARCHAR(255),&#xD;&#xA;[Version_VigenciaDesde] VARCHAR(255),&#xD;&#xA;Version_VigenciaHasta VARCHAR(255),&#xD;&#xA;[Estado Versión] VARCHAR(255), &#xD;&#xA;[Número Itinerario] INT,&#xD;&#xA;Itinerario_VigenciaDesde VARCHAR(255),&#xD;&#xA;Itinerario_VigenciaHasta VARCHAR(255),&#xD;&#xA;[Nombre Itinerario] VARCHAR(255),&#xD;&#xA;[Estado Itinerario] VARCHAR(255),&#xD;&#xA;[Vigencia Itinerario] VARCHAR(255),&#xD;&#xA;Persona_Id INT,&#xD;&#xA;[RUT] VARCHAR(255),&#xD;&#xA;[Nombre Colaborador] VARCHAR(255),&#xD;&#xA;EstadoColaborador VARCHAR(255), &#xD;&#xA;[Email] VARCHAR(255), &#xD;&#xA;SociedadContratante_Id INT,&#xD;&#xA;[Sociedad Contratante] VARCHAR(255),  &#xD;&#xA;UOrganizacional_Id INT, &#xD;&#xA;[Unidad Organizacional] VARCHAR(255),&#xD;&#xA;UNegocio_Id INT,&#xD;&#xA;[Unidad de Negocio] VARCHAR(255), &#xD;&#xA;Area_Id INT, &#xD;&#xA;[Área]  VARCHAR(255),&#xD;&#xA;Local_Id INT, &#xD;&#xA;Local_Codigo  VARCHAR(255), &#xD;&#xA;[Local] VARCHAR(255),&#xD;&#xA;Cargo_Id INT,&#xD;&#xA;[Cargo] VARCHAR(255),&#xD;&#xA;[Familia Cargo] VARCHAR(255),&#xD;&#xA;[Rut Jefe] VARCHAR(255),&#xD;&#xA;[Nombre Jefe] VARCHAR(255), &#xD;&#xA;[Email Jefe] VARCHAR(255), &#xD;&#xA;Avance FLOAT,&#xD;&#xA;[Cantidad] INT, &#xD;&#xA;Aprobadas INT,&#xD;&#xA;Reprobadas INT,&#xD;&#xA;Pendientes INT,&#xD;&#xA;Procesado INT,&#xD;&#xA;NominaActiva BIT&#xD;&#xA;)&#xD;&#xA;&#xD;&#xA;INSERT INTO  #ReporteGlobalMallas&#xD;&#xA;(Fila,[Id Malla],[Malla],[Fecha Creación],[Estado],IdNominaMalla,Escuela_Id,[Escuela],[Versión Malla],[Vigencia Versión],[Version_VigenciaDesde],Version_VigenciaHasta,&#xD;&#xA;[Estado Versión], [Número Itinerario],Itinerario_VigenciaDesde,Itinerario_VigenciaHasta,[Nombre Itinerario],[Estado Itinerario],[Vigencia Itinerario],Persona_Id,&#xD;&#xA;[RUT],[Nombre Colaborador], EstadoColaborador, [Email], SociedadContratante_Id, [Sociedad Contratante],  UOrganizacional_Id, [Unidad Organizacional],UNegocio_Id,&#xD;&#xA;[Unidad de Negocio], Area_Id, [Área],Local_Id, Local_Codigo, [Local],Cargo_Id,[Cargo],[Familia Cargo],[Rut Jefe],[Nombre Jefe], [Email Jefe], Avance,[Cantidad], Aprobadas,&#xD;&#xA;Reprobadas,Pendientes,Procesado,NominaActiva)&#xD;&#xA;select&#xD;&#xA;&#x9;    &#xD;&#xA;&#x9;&#x9;ROW_NUMBER() OVER (ORDER BY m.Id DESC, p.ApellidoPaterno ASC),&#xD;&#xA;&#x9;&#x9;m.Id,&#xD;&#xA;&#x9;&#x9;m.Nombre,&#xD;&#xA;&#x9;&#x9;CONVERT(VARCHAR(10), ISNULL(m.FechaCreacion, ''), 103), &#xD;&#xA;&#x9;&#x9;(CASE WHEN m.Activo = 1 THEN 'Activa' ELSE 'No Activa' END),&#xD;&#xA;&#x9;&#x9;nm.Id,&#xD;&#xA;&#x9;&#x9;esc.Id,&#xD;&#xA;&#x9;&#x9;esc.Nombre,&#xD;&#xA;&#x9;&#x9;vm.[Version],&#xD;&#xA;&#x9;&#x9;ISNULL(CONVERT(VARCHAR(10), ISNULL(vm.FechaInicio, ''), 103), '') + ' - ' + ISNULL(CONVERT(VARCHAR(10), vm.FechaTermino, 103), ''),&#xD;&#xA;&#x9;&#x9;vm.FechaInicio,&#xD;&#xA;&#x9;&#x9;vm.FechaTermino, &#xD;&#xA;&#x9;&#x9;(CASE WHEN vm.Activo = 1 THEN 'Vigente' ELSE 'No Vigente' END),&#xD;&#xA;&#x9;&#x9;mi.Id,&#xD;&#xA;&#x9;&#x9;mi.FechaInicio, &#xD;&#xA;&#x9;&#x9;mi.FechaTermino,&#xD;&#xA;&#x9;&#x9;mi.Nombre, &#xD;&#xA;&#x9;&#x9;(CASE WHEN mi.Activo = 1 THEN 'Vigente' ELSE 'No Vigente' END), &#xD;&#xA;&#x9;&#x9;ISNULL(CONVERT(VARCHAR(10), ISNULL(mi.FechaInicio, ''), 103), '') + ' - ' + ISNULL(CONVERT(VARCHAR(10), mi.FechaTermino, 103), ''),&#x9;&#x9;&#x9;&#x9;&#xD;&#xA;&#x9;&#x9;p.Id,&#xD;&#xA;&#x9;&#x9;p.IdentificacionUnica + '-' + p.Dv, &#xD;&#xA;&#x9;&#x9;p.ApellidoPaterno + ' ' + p.ApellidoMaterno + ' ' + p.Nombre, &#xD;&#xA;&#x9;&#x9;(CASE WHEN p.Activo = 1 THEN 'Vigente' ELSE 'No Vigente' END),&#xD;&#xA;&#x9;&#x9;ISNULL(p.Email, ''),&#xD;&#xA;&#x9;&#x9;pl.IdSociedadContratante, &#xD;&#xA;&#x9;&#x9;sc.Nombre,&#xD;&#xA;&#x9;&#x9;uo.Id,&#xD;&#xA;&#x9;&#x9;uo.Nombre, &#x9;&#x9;&#xD;&#xA;&#x9;&#x9;un.Id,&#xD;&#xA;&#x9;&#x9;un.Nombre, &#xD;&#xA;&#x9;&#x9;a.Id,&#xD;&#xA;&#x9;&#x9;a.Nombre, &#xD;&#xA;&#x9;&#x9;loc.Id, &#xD;&#xA;&#x9;&#x9;loc.CodigoLocal, &#xD;&#xA;&#x9;&#x9;loc.NombreLocal,&#xD;&#xA;&#x9;&#x9;c.Id, &#xD;&#xA;&#x9;&#x9;c.Nombre, &#x9;&#x9;&#xD;&#xA;&#x9;&#x9;fc.Nombre,&#xD;&#xA;&#x9;&#x9;pj.IdentificacionUnica + '-' + pj.Dv, &#xD;&#xA;&#x9;&#x9;pj.Nombre + ' ' + pj.ApellidoPaterno + ' ' + pj.ApellidoMaterno, &#xD;&#xA;&#x9;&#x9;pj.Email,&#x9;&#x9;&#x9;&#x9;&#xD;&#xA;&#x9;&#x9;CAST(CAST(CASE WHEN (SELECT COUNT(*) FROM MA_Componente mc&#xD;&#xA;&#x9;&#x9;JOIN MA_Seccion ms ON ms.Id = mc.IdSeccion AND ms.IdSociedad = mc.IdSociedad WHERE ms.IdVersion = vm.Id) = 0 THEN CAST(0 AS FLOAT) &#xD;&#xA;&#x9;&#x9;ELSE CAST(nm.CantUCAprobadas AS FLOAT)/CAST((SELECT COUNT(*) FROM MA_Componente mc JOIN MA_Seccion ms ON ms.Id = mc.IdSeccion AND ms.IdSociedad = mc.IdSociedad&#xD;&#xA;&#x9;&#x9;WHERE ms.IdVersion = vm.Id) AS FLOAT)*100.0 END AS DECIMAL(18,2)) AS FLOAT),&#x9;&#xD;&#xA;&#x9;&#x9;(SELECT COUNT(*) FROM MA_Componente mc JOIN MA_Seccion ms ON ms.Id = mc.IdSeccion AND ms.IdSociedad = mc.IdSociedad WHERE ms.IdVersion = vm.Id), &#xD;&#xA;&#x9;&#x9;nm.CantUCAprobadas,&#x9;&#xD;&#xA;&#x9;&#x9;nm.CantUCReprobadas, &#xD;&#xA;&#x9;   (SELECT COUNT(*) FROM MA_Componente mc JOIN MA_Seccion ms ON ms.Id = mc.IdSeccion AND ms.IdSociedad = mc.IdSociedad WHERE ms.IdVersion = vm.Id) - (nm.CantUCAprobadas + nm.CantUCReprobadas),&#xD;&#xA;&#x9;&#x9;0,&#xD;&#xA;&#x9;&#x9;nm.Activo&#x9;&#xD;&#xA;&#x9;&#x9;FROM MA_Malla m&#xD;&#xA;&#x9;LEFT JOIN MA_Version vm&#xD;&#xA;&#x9;&#x9;ON m.Id = vm.IdMalla&#xD;&#xA;&#x9;&#x9;&#x9;AND m.IdSociedad = vm.IdSociedad&#xD;&#xA;&#x9;JOIN MA_Itinerario mi&#xD;&#xA;&#x9;&#x9;ON vm.Id = mi.IdVersion&#xD;&#xA;&#x9;&#x9;&#x9;AND vm.IdSociedad = mi.IdSociedad&#xD;&#xA;&#x9;JOIN MA_Nomina nm&#xD;&#xA;&#x9;&#x9;ON mi.Id = nm.IdItinerario&#xD;&#xA;&#x9;&#x9;&#x9;AND mi.IdSociedad = nm.IdSociedad&#xD;&#xA;&#x9;JOIN Escuela esc&#xD;&#xA;&#x9;&#x9;ON esc.Id = m.IdEscuela&#xD;&#xA;&#x9;LEFT JOIN Personas p&#xD;&#xA;&#x9;&#x9;ON p.Id = nm.IdPersona&#xD;&#xA;&#x9;JOIN PosicionLaboral pl&#xD;&#xA;&#x9;&#x9;ON pl.IdPersona = p.Id&#xD;&#xA;&#x9;&#x9;&#x9;AND pl.Activo = 1 &#xD;&#xA;&#x9;&#x9;&#x9;AND pl.Estado = 2&#xD;&#xA;&#x9;JOIN InformacionPersonal ip&#xD;&#xA;&#x9;&#x9;ON ip.IdPersona = p.Id&#xD;&#xA;&#x9;JOIN UnidadesOrganizacional uo&#xD;&#xA;&#x9;&#x9;ON pl.IdUnidadOrganizacional = uo.Id&#xD;&#xA;&#x9;LEFT JOIN Cargos c&#xD;&#xA;&#x9;&#x9;ON c.Id = pl.IdCargo&#xD;&#xA;&#x9;LEFT JOIN UnidadesNegocio un&#xD;&#xA;&#x9;&#x9;ON un.Id = pl.IdUnidadNegocio&#xD;&#xA;&#x9;JOIN Sociedad sc&#xD;&#xA;&#x9;&#x9;ON sc.Id = pl.IdSociedadContratante&#xD;&#xA;&#x9;&#x9;&#x9;AND sc.Activo = 1&#xD;&#xA;&#x9;LEFT JOIN Area a&#xD;&#xA;&#x9;&#x9;ON a.Id = ip.IdArea&#xD;&#xA;&#x9;LEFT JOIN [Locales] loc&#xD;&#xA;&#x9;&#x9;ON loc.Id = ip.IdLocal&#xD;&#xA;&#x9;LEFT JOIN FamiliaCargo fc&#xD;&#xA;&#x9;&#x9;ON c.IdFamiliaCargo = fc.Id&#xD;&#xA;&#x9;LEFT JOIN Personas pj&#xD;&#xA;&#x9;&#x9;ON pl.IdPersonaJefe = pj.Id&#xD;&#xA;&#x9;&#x9;&#x9;AND pj.Activo = 1&#xD;&#xA;&#x9;WHERE pl.Id = (SELECT MAX(pl1.Id) FROM PosicionLaboral pl1&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;WHERE pl1.IdPersona = pl.IdPersona&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;AND pl1.Estado = pl.Estado)&#xD;&#xA;&#x9;AND pl.Estado = 2&#xD;&#xA;&#x9;AND nm.Activo = 1&#xD;&#xA;&#x9;AND m.IdSociedad = 5000&#xD;&#xA;&#x9;ORDER BY &#xD;&#xA;&#x9;m.Id DESC,&#xD;&#xA;&#x9;p.ApellidoPaterno ASC&#xD;&#xA;&#xD;&#xA;CREATE TABLE #UC_ReporteGlobal &#xD;&#xA;&#x9;(Id INT IDENTITY(1, 1) PRIMARY KEY,IdReporteGlobal INT,IdUC INT,Fecha VARCHAR(255),Nota VARCHAR(255), Estado VARCHAR(255));&#xD;&#xA;WITH cteUninadesCurriculares (idUc) AS &#xD;&#xA;&#x9;(&#xD;&#xA;&#x9;SELECT distinct  mc.IdUnidadCurricular&#xD;&#xA;&#x9;&#x9;FROM #ReporteGlobalMallas&#xD;&#xA;&#x9;&#x9;&#x9;LEFT JOIN MA_Version vm ON vm.IdMalla = #ReporteGlobalMallas.[Id Malla]&#xD;&#xA;&#x9;&#x9;&#x9;LEFT JOIN MA_Seccion ms&#x9;ON vm.Id = ms.IdVersion AND vm.IdSociedad = ms.IdSociedad&#xD;&#xA;&#x9;&#x9;&#x9;LEFT JOIN MA_Componente mc ON ms.Id = mc.IdSeccion AND ms.IdSociedad = mc.IdSociedad&#xD;&#xA;&#x9;&#x9;&#x9;LEFT JOIN CatalogoCurso cc ON cc.Id = mc.IdUnidadCurricular AND mc.IdSociedad = cc.IdSociedad&#xD;&#xA;&#x9;)&#xD;&#xA;&#x9;INSERT INTO #UC_ReporteGlobal &#xD;&#xA;&#x9;&#x9;(IdReporteGlobal,IdUC,Fecha,Nota, Estado)&#xD;&#xA;&#x9;SELECT DISTINCT rgm.id as idReporteGlobal,uc.idUc,&#x9;&#x9;&#xD;&#xA;&#x9;ISNULL((CASE WHEN CAST(uc.idUc AS VARCHAR)  IN (SELECT MA_Componente.IdUnidadCurricular &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9; FROM MA_Version  &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;INNER JOIN MA_Seccion on MA_Seccion.IdVersion = MA_Version.Id AND MA_Version.IdMalla =  rgm.[Id Malla] &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;INNER JOIN MA_Componente on MA_Componente.IdSeccion = MA_Seccion.Id) &#xD;&#xA;&#x9;&#x9;THEN 'N/D' ELSE '-' END ),'-') AS Fecha,&#xD;&#xA;&#x9;ISNULL((CASE WHEN CAST(uc.idUc AS VARCHAR)  IN (SELECT MA_Componente.IdUnidadCurricular &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9; FROM MA_Version  &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;INNER JOIN MA_Seccion on MA_Seccion.IdVersion = MA_Version.Id AND MA_Version.IdMalla =  rgm.[Id Malla] &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;INNER JOIN MA_Componente on MA_Componente.IdSeccion = MA_Seccion.Id) &#xD;&#xA;&#x9;&#x9;THEN 'N/D' ELSE '-' END ),'-') AS Nota,&#xD;&#xA;&#x9;ISNULL((CASE WHEN CAST(uc.idUc AS VARCHAR)  IN (SELECT MA_Componente.IdUnidadCurricular &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9; FROM MA_Version  &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;INNER JOIN MA_Seccion on MA_Seccion.IdVersion = MA_Version.Id AND MA_Version.IdMalla =  rgm.[Id Malla] &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;INNER JOIN MA_Componente on MA_Componente.IdSeccion = MA_Seccion.Id) &#xD;&#xA;&#x9;&#x9;THEN 'N/D' ELSE '-' END ),'-') AS Estado&#xD;&#xA;&#x9;FROM #ReporteGlobalMallas rgm&#xD;&#xA;&#x9;&#x9;CROSS JOIN cteUninadesCurriculares uc&#xD;&#xA;&#x9;&#x9;INNER JOIN MA_Nomina n on n.id = rgm.IdNominaMalla AND rgm.Persona_Id = n.idPersona&#xD;&#xA;&#x9;&#x9;LEFT JOIN MA_DetalleNOmina dn on dn.IdNomina = n.id&#xD;&#xA;&#x9;WHERE uc.idUc IS NOT NULL&#xD;&#xA;&#x9;ORDER BY rgm.id,uc.idUc&#xD;&#xA;&#xD;&#xA;&#x9;UPDATE #UC_ReporteGlobal&#xD;&#xA;&#x9;SET Fecha = ISNULL((CASE WHEN dn.IdSituacionFinal IN (1,2,3) THEN &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;(CASE WHEN dn.FechaActualizacion IS NULL THEN 'N/D' ELSE CONVERT(varchar, dn.FechaActualizacion , 105) END) END),'-'),&#xD;&#xA;&#x9;Nota = (CASE &#xD;&#xA;&#x9;&#x9;&#x9;WHEN dn.IdSituacionFinal IN (1) THEN  &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;(CASE WHEN (dn.PorcentajeEvaluacion) IS NOT NULL &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;  THEN (CASE WHEN (dn.PorcentajeEvaluacion &lt;> '-1') THEN CAST(dn.PorcentajeEvaluacion AS VARCHAR) + '%' ELSE 'N/A' END) ELSE 'N/D' END)&#xD;&#xA;&#x9;WHEN dn.IdSituacionFinal IN (2,3) THEN &#xD;&#xA;&#x9;&#x9;(CASE WHEN (dn.PorcentajeEvaluacion) IS NOT NULL &#xD;&#xA;&#x9;&#x9;&#x9;  THEN (CASE WHEN (dn.PorcentajeEvaluacion &lt;> '-1') THEN CAST(dn.PorcentajeEvaluacion AS VARCHAR) + '%' ELSE 'N/A' END) ELSE 'N/D' END)&#xD;&#xA;&#x9;&#x9;ELSE 'N/D'  END),&#xD;&#xA;&#x9;Estado = CASE WHEN dn.IdSituacionFinal IN (1) THEN 'Aprobado' WHEN dn.IdSituacionFinal IN (2,3) THEN 'Reprobado'&#x9;ELSE 'N/D'  END&#xD;&#xA;&#x9;FROM #ReporteGlobalMallas tm&#xD;&#xA;&#x9;&#x9;INNER JOIN MA_Nomina n on n.id = tm.IdNominaMalla AND tm.Persona_Id = n.idPersona&#xD;&#xA;&#x9;&#x9;INNER JOIN MA_DetalleNOmina dn on dn.IdNomina = n.id&#xD;&#xA;&#x9;WHERE tm.id = #UC_ReporteGlobal.IdReporteGlobal and dn.IdUc = #UC_ReporteGlobal.IdUC;&#xD;&#xA;&#x9;&#xD;&#xA;&#x9;SELECT Id,Fila,[Id Malla],[Malla],[Fecha Creación],[Estado],IdNominaMalla,Escuela_Id,[Escuela],[Versión Malla],[Vigencia Versión],[Version_VigenciaDesde],Version_VigenciaHasta,&#xD;&#xA;&#x9;[Estado Versión], [Número Itinerario],Itinerario_VigenciaDesde,Itinerario_VigenciaHasta,[Nombre Itinerario],[Estado Itinerario],[Vigencia Itinerario],Persona_Id,&#xD;&#xA;&#x9;[RUT],[Nombre Colaborador], EstadoColaborador, [Email], SociedadContratante_Id, [Sociedad Contratante],  UOrganizacional_Id, [Unidad Organizacional],UNegocio_Id,&#xD;&#xA;&#x9;[Unidad de Negocio], Area_Id, [Área],Local_Id, Local_Codigo, [Local],Cargo_Id,[Cargo],[Familia Cargo],[Rut Jefe],[Nombre Jefe], [Email Jefe], Avance,[Cantidad], Aprobadas,&#xD;&#xA;&#x9;Reprobadas,Pendientes,Procesado,NominaActiva FROM #ReporteGlobalMallas;&#xD;&#xA;&#x9;SELECT IdReporteGlobal,IdUC,Fecha,Nota, Estado AS EstadoUC FROM #UC_ReporteGlobal;&#xD;&#xA;&#xD;&#xA;&#x9;DROP TABLE #ReporteGlobalMallas;&#xD;&#xA;&#x9;DROP TABLE #UC_ReporteGlobal;&quot;"/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime" show="false"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false" show="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" value="id_MSSQL" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;noDatetimeStringSync=true&quot;" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="TRIM_ALL_COLUMN" value="false"/>
+    <elementParameter field="TABLE" name="TRIM_COLUMN">
+      <elementValue elementRef="SCHEMA_COLUMN" value="Id"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Fila"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="IdMalla"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Malla"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="FechaCreacion"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Estado"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="IdNominaMalla"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Escuela_Id"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Escuela"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="VersionMalla"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="VigenciaVersion"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Version_VigenciaDesde"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Version_VigenciaHasta"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="EstadoVersion"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="NumeroItinerario"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Itinerario_VigenciaDesde"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Itinerario_VigenciaHasta"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="NombreItinerario"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="EstadoItinerario"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="VigenciaItinerario"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Persona_Id"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="RUT"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="NombreColaborador"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="EstadoColaborador"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Email"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="SociedadContratante_Id"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="SociedadContratante"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="UOrganizacional_Id"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="UnidadOrganizacional"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="UNegocio_Id"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="UnidadNegocio"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Area_Id"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Area"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Local_Id"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Local_Codigo"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Local"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Cargo_Id"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Cargo"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="FamiliaCargo"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="RutJefe"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="NombreJefe"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="EmailJefe"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Avance"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Cantidad"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Aprobadas"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Reprobadas"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Pendientes"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Procesado"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="NominaActiva"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="IdReporteGlobal"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="IdUC"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Fecha"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Nota"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="EstadoUC"/>
+      <elementValue elementRef="TRIM" value="false"/>
+    </elementParameter>
+    <elementParameter field="TEXT" name="LABEL" value="ReporteGlobal"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tDBInput_1">
+      <column comment="" key="false" length="-1" name="Id" nullable="true" pattern="" precision="-1" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Fila" nullable="true" pattern="" precision="-1" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="IdMalla" nullable="true" pattern="" precision="-1" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Malla" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="FechaCreacion" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Estado" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="IdNominaMalla" nullable="true" pattern="" precision="-1" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Escuela_Id" nullable="true" pattern="" precision="-1" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Escuela" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="VersionMalla" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="VigenciaVersion" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Version_VigenciaDesde" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="DATETIME" type="id_Date" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Version_VigenciaHasta" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="DATETIME" type="id_Date" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="EstadoVersion" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="NumeroItinerario" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Itinerario_VigenciaDesde" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="DATETIME" type="id_Date" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Itinerario_VigenciaHasta" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="DATETIME" type="id_Date" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="NombreItinerario" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="EstadoItinerario" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="VigenciaItinerario" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Persona_Id" nullable="true" pattern="" precision="-1" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="RUT" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="NombreColaborador" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="EstadoColaborador" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Email" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="SociedadContratante_Id" nullable="true" pattern="" precision="-1" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="SociedadContratante" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="UOrganizacional_Id" nullable="true" pattern="" precision="-1" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="UnidadOrganizacional" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="UNegocio_Id" nullable="true" pattern="" precision="-1" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="UnidadNegocio" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Area_Id" nullable="true" pattern="" precision="-1" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Area" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Local_Id" nullable="true" pattern="" precision="-1" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Local_Codigo" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Local" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Cargo_Id" nullable="true" pattern="" precision="-1" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Cargo" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="FamiliaCargo" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="RutJefe" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="NombreJefe" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="EmailJefe" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Avance" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Cantidad" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Aprobadas" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Reprobadas" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Pendientes" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Procesado" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="NominaActiva" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="IdReporteGlobal" nullable="true" pattern="" precision="-1" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="IdUC" nullable="true" pattern="" precision="-1" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Fecha" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Nota" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="EstadoUC" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="544" posY="384">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMap_1" show="false"/>
+    <elementParameter field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
+    <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
+    <elementParameter field="IMAGE" name="PREVIEW" value="_GFOlMNDjEeqVzcFIj8LQEQ-tMap_1-PREVIEW.bmp"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true" show="false"/>
+    <elementParameter field="CHECK" name="LKUP_PARALLELIZE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="LEVENSHTEIN" value="0" show="false"/>
+    <elementParameter field="TEXT" name="JACCARD" value="0" show="false"/>
+    <elementParameter field="CHECK" name="ENABLE_AUTO_CONVERT_TYPE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
+    <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="true"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="General">
+      <column comment="" key="false" length="-1" name="Id" nullable="true" pattern="" precision="-1" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Fila" nullable="true" pattern="" precision="-1" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="IdMalla" nullable="true" pattern="" precision="-1" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Malla" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="FechaCreacion" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Estado" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="IdNominaMalla" nullable="true" pattern="" precision="-1" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Escuela_Id" nullable="true" pattern="" precision="-1" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Escuela" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="VersionMalla" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="VigenciaVersion" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Version_VigenciaDesde" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="DATETIME" type="id_Date" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Version_VigenciaHasta" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="DATETIME" type="id_Date" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="EstadoVersion" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="NumeroItinerario" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Itinerario_VigenciaDesde" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="DATETIME" type="id_Date" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Itinerario_VigenciaHasta" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="DATETIME" type="id_Date" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="NombreItinerario" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="EstadoItinerario" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="VigenciaItinerario" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Persona_Id" nullable="true" pattern="" precision="-1" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="RUT" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="NombreColaborador" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="EstadoColaborador" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Email" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="SociedadContratante_Id" nullable="true" pattern="" precision="-1" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="SociedadContratante" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="UOrganizacional_Id" nullable="true" pattern="" precision="-1" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="UnidadOrganizacional" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="UNegocio_Id" nullable="true" pattern="" precision="-1" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="UnidadNegocio" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Area_Id" nullable="true" pattern="" precision="-1" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Area" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Local_Id" nullable="true" pattern="" precision="-1" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Local_Codigo" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Local" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Cargo_Id" nullable="true" pattern="" precision="-1" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Cargo" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="FamiliaCargo" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="RutJefe" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="NombreJefe" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="EmailJefe" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Avance" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Cantidad" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Aprobadas" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Reprobadas" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Pendientes" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Procesado" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="NominaActiva" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="FLOW" label="p" name="Gen">
+      <column comment="" key="false" length="-1" name="Id" nullable="true" pattern="" precision="-1" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Fila" nullable="true" pattern="" precision="-1" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="IdMalla" nullable="true" pattern="" precision="-1" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Malla" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="FechaCreacion" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Estado" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="IdNominaMalla" nullable="true" pattern="" precision="-1" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Escuela_Id" nullable="true" pattern="" precision="-1" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Escuela" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="VersionMalla" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="VigenciaVersion" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Version_VigenciaDesde" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_Date" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Version_VigenciaHasta" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_Date" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="EstadoVersion" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="NumeroItinerario" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Itinerario_VigenciaDesde" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Itinerario_VigenciaHasta" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="NombreItinerario" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="EstadoItinerario" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="VigenciaItinerario" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Persona_Id" nullable="true" pattern="" precision="-1" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="RUT" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="NombreColaborador" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="EstadoColaborador" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Email" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="SociedadContratante_Id" nullable="true" pattern="" precision="-1" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="SociedadContratante" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="UOrganizacional_Id" nullable="true" pattern="" precision="-1" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="UnidadOrganizacional" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="UNegocio_Id" nullable="true" pattern="" precision="-1" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="UnidadNegocio" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Area_Id" nullable="true" pattern="" precision="-1" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Area" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Local_Id" nullable="true" pattern="" precision="-1" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Local_Codigo" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Local" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Cargo_Id" nullable="true" pattern="" precision="-1" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Cargo" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="FamiliaCargo" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="RutJefe" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="NombreJefe" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="EmailJefe" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Avance" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Cantidad" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Aprobadas" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Reprobadas" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Pendientes" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Procesado" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="NominaActiva" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+    <nodeData xsi:type="TalendMapper:MapperData">
+      <uiProperties/>
+      <varTables sizeState="INTERMEDIATE" name="Var"/>
+      <outputTables sizeState="INTERMEDIATE" name="General">
+        <mapperTableEntries name="Id" expression="row2.Id " type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="Fila" expression="row2.Fila " type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="IdMalla" expression="row2.IdMalla " type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="Malla" expression="row2.Malla " type="id_String" nullable="true"/>
+        <mapperTableEntries name="FechaCreacion" expression="row2.FechaCreacion " type="id_String" nullable="true"/>
+        <mapperTableEntries name="Estado" expression="row2.Estado " type="id_String" nullable="true"/>
+        <mapperTableEntries name="IdNominaMalla" expression="row2.IdNominaMalla " type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="Escuela_Id" expression="row2.Escuela_Id " type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="Escuela" expression="row2.Escuela " type="id_String" nullable="true"/>
+        <mapperTableEntries name="VersionMalla" expression="row2.VersionMalla " type="id_String" nullable="true"/>
+        <mapperTableEntries name="VigenciaVersion" expression="row2.VigenciaVersion " type="id_String" nullable="true"/>
+        <mapperTableEntries name="Version_VigenciaDesde" expression="row2.Version_VigenciaDesde " type="id_Date" nullable="true"/>
+        <mapperTableEntries name="Version_VigenciaHasta" expression="row2.Version_VigenciaHasta " type="id_Date" nullable="true"/>
+        <mapperTableEntries name="EstadoVersion" expression="row2.EstadoVersion " type="id_String" nullable="true"/>
+        <mapperTableEntries name="NumeroItinerario" expression="row2.NumeroItinerario " type="id_String" nullable="true"/>
+        <mapperTableEntries name="Itinerario_VigenciaDesde" expression="row2.Itinerario_VigenciaDesde " type="id_Date" nullable="true"/>
+        <mapperTableEntries name="Itinerario_VigenciaHasta" expression="row2.Itinerario_VigenciaHasta " type="id_Date" nullable="true"/>
+        <mapperTableEntries name="NombreItinerario" expression="row2.NombreItinerario " type="id_String" nullable="true"/>
+        <mapperTableEntries name="EstadoItinerario" expression="row2.EstadoItinerario " type="id_String" nullable="true"/>
+        <mapperTableEntries name="VigenciaItinerario" expression="row2.VigenciaItinerario " type="id_String" nullable="true"/>
+        <mapperTableEntries name="Persona_Id" expression="row2.Persona_Id " type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="RUT" expression="row2.RUT " type="id_String" nullable="true"/>
+        <mapperTableEntries name="NombreColaborador" expression="row2.NombreColaborador " type="id_String" nullable="true"/>
+        <mapperTableEntries name="EstadoColaborador" expression="row2.EstadoColaborador " type="id_String" nullable="true"/>
+        <mapperTableEntries name="Email" expression="row2.Email " type="id_String" nullable="true"/>
+        <mapperTableEntries name="SociedadContratante_Id" expression="row2.SociedadContratante_Id " type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="SociedadContratante" expression="row2.SociedadContratante " type="id_String" nullable="true"/>
+        <mapperTableEntries name="UOrganizacional_Id" expression="row2.UOrganizacional_Id " type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="UnidadOrganizacional" expression="row2.UnidadOrganizacional " type="id_String" nullable="true"/>
+        <mapperTableEntries name="UNegocio_Id" expression="row2.UNegocio_Id " type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="UnidadNegocio" expression="row2.UnidadNegocio " type="id_String" nullable="true"/>
+        <mapperTableEntries name="Area_Id" expression="row2.Area_Id " type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="Area" expression="row2.Area " type="id_String" nullable="true"/>
+        <mapperTableEntries name="Local_Id" expression="row2.Local_Id " type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="Local_Codigo" expression="row2.Local_Codigo " type="id_String" nullable="true"/>
+        <mapperTableEntries name="Local" expression="row2.Local " type="id_String" nullable="true"/>
+        <mapperTableEntries name="Cargo_Id" expression="row2.Cargo_Id " type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="Cargo" expression="row2.Cargo " type="id_String" nullable="true"/>
+        <mapperTableEntries name="FamiliaCargo" expression="row2.FamiliaCargo " type="id_String" nullable="true"/>
+        <mapperTableEntries name="RutJefe" expression="row2.RutJefe " type="id_String" nullable="true"/>
+        <mapperTableEntries name="NombreJefe" expression="row2.NombreJefe " type="id_String" nullable="true"/>
+        <mapperTableEntries name="EmailJefe" expression="row2.EmailJefe " type="id_String" nullable="true"/>
+        <mapperTableEntries name="Avance" expression="row2.Avance " type="id_String" nullable="true"/>
+        <mapperTableEntries name="Cantidad" expression="row2.Cantidad " type="id_String" nullable="true"/>
+        <mapperTableEntries name="Aprobadas" expression="row2.Aprobadas " type="id_String" nullable="true"/>
+        <mapperTableEntries name="Reprobadas" expression="row2.Reprobadas " type="id_String" nullable="true"/>
+        <mapperTableEntries name="Pendientes" expression="row2.Pendientes " type="id_String" nullable="true"/>
+        <mapperTableEntries name="Procesado" expression="row2.Procesado " type="id_String" nullable="true"/>
+        <mapperTableEntries name="NominaActiva" expression="row2.NominaActiva " type="id_String" nullable="true"/>
+      </outputTables>
+      <outputTables sizeState="INTERMEDIATE" name="Gen">
+        <mapperTableEntries name="Id" type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="Fila" type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="IdMalla" type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="Malla" type="id_String" nullable="true"/>
+        <mapperTableEntries name="FechaCreacion" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Estado" type="id_String" nullable="true"/>
+        <mapperTableEntries name="IdNominaMalla" type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="Escuela_Id" type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="Escuela" type="id_String" nullable="true"/>
+        <mapperTableEntries name="VersionMalla" type="id_String" nullable="true"/>
+        <mapperTableEntries name="VigenciaVersion" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Version_VigenciaDesde" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="Version_VigenciaHasta" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="EstadoVersion" type="id_String" nullable="true"/>
+        <mapperTableEntries name="NumeroItinerario" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Itinerario_VigenciaDesde" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Itinerario_VigenciaHasta" type="id_String" nullable="true"/>
+        <mapperTableEntries name="NombreItinerario" type="id_String" nullable="true"/>
+        <mapperTableEntries name="EstadoItinerario" type="id_String" nullable="true"/>
+        <mapperTableEntries name="VigenciaItinerario" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Persona_Id" type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="RUT" type="id_String" nullable="true"/>
+        <mapperTableEntries name="NombreColaborador" type="id_String" nullable="true"/>
+        <mapperTableEntries name="EstadoColaborador" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Email" type="id_String" nullable="true"/>
+        <mapperTableEntries name="SociedadContratante_Id" type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="SociedadContratante" type="id_String" nullable="true"/>
+        <mapperTableEntries name="UOrganizacional_Id" type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="UnidadOrganizacional" type="id_String" nullable="true"/>
+        <mapperTableEntries name="UNegocio_Id" type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="UnidadNegocio" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Area_Id" type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="Area" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Local_Id" type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="Local_Codigo" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Local" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Cargo_Id" type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="Cargo" type="id_String" nullable="true"/>
+        <mapperTableEntries name="FamiliaCargo" type="id_String" nullable="true"/>
+        <mapperTableEntries name="RutJefe" type="id_String" nullable="true"/>
+        <mapperTableEntries name="NombreJefe" type="id_String" nullable="true"/>
+        <mapperTableEntries name="EmailJefe" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Avance" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Cantidad" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Aprobadas" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Reprobadas" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Pendientes" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Procesado" type="id_String" nullable="true"/>
+        <mapperTableEntries name="NominaActiva" type="id_String" nullable="true"/>
+      </outputTables>
+      <inputTables sizeState="INTERMEDIATE" name="row2" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
+        <mapperTableEntries name="Id" type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="Fila" type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="IdMalla" type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="Malla" type="id_String" nullable="true"/>
+        <mapperTableEntries name="FechaCreacion" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Estado" type="id_String" nullable="true"/>
+        <mapperTableEntries name="IdNominaMalla" type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="Escuela_Id" type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="Escuela" type="id_String" nullable="true"/>
+        <mapperTableEntries name="VersionMalla" type="id_String" nullable="true"/>
+        <mapperTableEntries name="VigenciaVersion" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Version_VigenciaDesde" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="Version_VigenciaHasta" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="EstadoVersion" type="id_String" nullable="true"/>
+        <mapperTableEntries name="NumeroItinerario" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Itinerario_VigenciaDesde" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="Itinerario_VigenciaHasta" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="NombreItinerario" type="id_String" nullable="true"/>
+        <mapperTableEntries name="EstadoItinerario" type="id_String" nullable="true"/>
+        <mapperTableEntries name="VigenciaItinerario" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Persona_Id" type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="RUT" type="id_String" nullable="true"/>
+        <mapperTableEntries name="NombreColaborador" type="id_String" nullable="true"/>
+        <mapperTableEntries name="EstadoColaborador" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Email" type="id_String" nullable="true"/>
+        <mapperTableEntries name="SociedadContratante_Id" type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="SociedadContratante" type="id_String" nullable="true"/>
+        <mapperTableEntries name="UOrganizacional_Id" type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="UnidadOrganizacional" type="id_String" nullable="true"/>
+        <mapperTableEntries name="UNegocio_Id" type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="UnidadNegocio" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Area_Id" type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="Area" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Local_Id" type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="Local_Codigo" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Local" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Cargo_Id" type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="Cargo" type="id_String" nullable="true"/>
+        <mapperTableEntries name="FamiliaCargo" type="id_String" nullable="true"/>
+        <mapperTableEntries name="RutJefe" type="id_String" nullable="true"/>
+        <mapperTableEntries name="NombreJefe" type="id_String" nullable="true"/>
+        <mapperTableEntries name="EmailJefe" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Avance" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Cantidad" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Aprobadas" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Reprobadas" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Pendientes" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Procesado" type="id_String" nullable="true"/>
+        <mapperTableEntries name="NominaActiva" type="id_String" nullable="true"/>
+        <mapperTableEntries name="IdReporteGlobal" type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="IdUC" type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="Fecha" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Nota" type="id_String" nullable="true"/>
+        <mapperTableEntries name="EstadoUC" type="id_String" nullable="true"/>
+      </inputTables>
+      <inputTables sizeState="INTERMEDIATE" name="row3" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE" innerJoin="true">
+        <mapperTableEntries name="Id" expression="row2.IdNominaMalla " type="id_Integer" nullable="true" operator="="/>
+        <mapperTableEntries name="IdItinerario" type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="IdPersona" type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="FechaInscripcion" type="id_Date" nullable="true"/>
+      </inputTables>
+    </nodeData>
+  </node>
+  <node componentName="tFileOutputExcel" componentVersion="0.101" offsetLabelX="50" offsetLabelY="-64" posX="736" posY="384">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileOutputExcel_1" show="false"/>
+    <elementParameter field="CHECK" name="VERSION_2007" value="true"/>
+    <elementParameter field="CHECK" name="USESTREAM" value="false"/>
+    <elementParameter field="TEXT" name="STREAMNAME" value="outputStream" show="false"/>
+    <elementParameter field="FILE" name="FILENAME" value="&quot;C:/Users/gsanchez/Documents/TOS_DI-Win32-20200219_1130-V7.3.1/workspace/out.xlsx&quot;"/>
+    <elementParameter field="TEXT" name="SHEETNAME" value="&quot;Sheet1&quot;"/>
+    <elementParameter field="CHECK" name="INCLUDEHEADER" value="true"/>
+    <elementParameter field="CHECK" name="APPEND_FILE" value="false"/>
+    <elementParameter field="CHECK" name="APPEND_SHEET" value="false" show="false"/>
+    <elementParameter field="CHECK" name="FIRST_CELL_Y_ABSOLUTE" value="false"/>
+    <elementParameter field="TEXT" name="FIRST_CELL_X" value="0" show="false"/>
+    <elementParameter field="TEXT" name="FIRST_CELL_Y" value="0" show="false"/>
+    <elementParameter field="CHECK" name="KEEP_CELL_FORMATING" value="false" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="FONT" value="TAHOMA"/>
+    <elementParameter field="CHECK" name="IS_ALL_AUTO_SZIE" value="false"/>
+    <elementParameter field="TABLE" name="AUTO_SZIE_SETTING">
+      <elementValue elementRef="SCHEMA_COLUMN" value="Id"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Fila"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="IdMalla"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Malla"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="FechaCreacion"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Estado"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="IdNominaMalla"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Escuela_Id"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Escuela"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="VersionMalla"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="VigenciaVersion"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Version_VigenciaDesde"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Version_VigenciaHasta"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="EstadoVersion"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="NumeroItinerario"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Itinerario_VigenciaDesde"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Itinerario_VigenciaHasta"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="NombreItinerario"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="EstadoItinerario"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="VigenciaItinerario"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Persona_Id"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="RUT"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="NombreColaborador"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="EstadoColaborador"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Email"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="SociedadContratante_Id"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="SociedadContratante"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="UOrganizacional_Id"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="UnidadOrganizacional"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="UNegocio_Id"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="UnidadNegocio"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Area_Id"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Area"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Local_Id"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Local_Codigo"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Local"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Cargo_Id"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Cargo"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="FamiliaCargo"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="RutJefe"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="NombreJefe"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="EmailJefe"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Avance"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Cantidad"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Aprobadas"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Reprobadas"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Pendientes"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Procesado"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="NominaActiva"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="PROTECT_FILE" value="false"/>
+    <elementParameter field="PASSWORD" name="PASSWORD" value="enc:system.encryption.key.v1:23DPv2mwlhorEajxLLUGrIvfeao0yqTDsOqceFWs" show="false"/>
+    <elementParameter field="CHECK" name="CREATE" value="true"/>
+    <elementParameter field="CHECK" name="FLUSHONROW" value="false"/>
+    <elementParameter field="TEXT" name="FLUSHONROW_NUM" value="100" show="false"/>
+    <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
+    <elementParameter field="TEXT" name="THOUSANDS_SEPARATOR" value="&quot;,&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DECIMAL_SEPARATOR" value="&quot;.&quot;" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="DELETE_EMPTYFILE" value="false"/>
+    <elementParameter field="CHECK" name="RECALCULATE_FORMULA" value="false" show="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="100" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="p" name="tFileOutputExcel_1">
+      <column comment="" key="false" length="-1" name="Id" nullable="true" pattern="" precision="-1" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Fila" nullable="true" pattern="" precision="-1" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="IdMalla" nullable="true" pattern="" precision="-1" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Malla" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="FechaCreacion" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Estado" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="IdNominaMalla" nullable="true" pattern="" precision="-1" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Escuela_Id" nullable="true" pattern="" precision="-1" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Escuela" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="VersionMalla" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="VigenciaVersion" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Version_VigenciaDesde" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_Date" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Version_VigenciaHasta" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_Date" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="EstadoVersion" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="NumeroItinerario" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Itinerario_VigenciaDesde" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Itinerario_VigenciaHasta" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="NombreItinerario" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="EstadoItinerario" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="VigenciaItinerario" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Persona_Id" nullable="true" pattern="" precision="-1" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="RUT" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="NombreColaborador" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="EstadoColaborador" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Email" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="SociedadContratante_Id" nullable="true" pattern="" precision="-1" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="SociedadContratante" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="UOrganizacional_Id" nullable="true" pattern="" precision="-1" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="UnidadOrganizacional" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="UNegocio_Id" nullable="true" pattern="" precision="-1" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="UnidadNegocio" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Area_Id" nullable="true" pattern="" precision="-1" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Area" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Local_Id" nullable="true" pattern="" precision="-1" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Local_Codigo" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Local" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Cargo_Id" nullable="true" pattern="" precision="-1" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Cargo" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="FamiliaCargo" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="RutJefe" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="NombreJefe" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="EmailJefe" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Avance" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Cantidad" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Aprobadas" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Reprobadas" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Pendientes" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Procesado" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="NominaActiva" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tMSSqlInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="736" posY="256">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBInput_4" show="false"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tDBConnection_1"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DRIVER" value="JTDS" show="false"/>
+    <elementParameter field="TEXT" name="TYPE" value="MSSQL" show="false"/>
+    <elementParameter field="TEXT" name="PORT" value="&quot;1433&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DB_SCHEMA" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DBNAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:+8DPwh2bqiu5O6BXxhI0A2dSMX5ZUhAjvBgKClvE" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT Id, IdItinerario, IdPersona, FechaInscripcion FROM MA_Nomina&quot;"/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime" show="false"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false" show="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" value="id_MSSQL" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;noDatetimeStringSync=true&quot;" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="TRIM_ALL_COLUMN" value="false"/>
+    <elementParameter field="TABLE" name="TRIM_COLUMN">
+      <elementValue elementRef="SCHEMA_COLUMN" value="Id"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="IdItinerario"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="IdPersona"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="FechaInscripcion"/>
+      <elementValue elementRef="TRIM" value="false"/>
+    </elementParameter>
+    <elementParameter field="TEXT" name="LABEL" value="MA_Nomina"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tDBInput_4">
+      <column comment="" key="false" length="-1" name="Id" nullable="true" pattern="" precision="-1" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="IdItinerario" nullable="true" pattern="" precision="-1" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="IdPersona" nullable="true" pattern="" precision="-1" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="FechaInscripcion" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="DATETIME" type="id_Date" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="tFileInputDelimited_1" offsetLabelX="0" offsetLabelY="0" source="tFileInputDelimited_1" target="tContextLoad_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row1" show="false"/>
+  </connection>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tContextLoad_1" offsetLabelX="0" offsetLabelY="0" source="tContextLoad_1" target="tDBConnection_1">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk1" show="false"/>
+  </connection>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tDBConnection_1" offsetLabelX="0" offsetLabelY="0" source="tDBConnection_1" target="tDBInput_1">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk2" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row2" lineStyle="0" metaname="tDBInput_1" offsetLabelX="0" offsetLabelY="0" source="tDBInput_1" target="tMap_1">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="EstadoUC"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="IdReporteGlobal"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Fecha"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="IdUC"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Nota"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Email"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="VigenciaItinerario"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Persona_Id"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="UnidadOrganizacional"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="EmailJefe"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Local_Id"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="NombreJefe"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="SociedadContratante"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Itinerario_VigenciaDesde"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Escuela_Id"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Version_VigenciaDesde"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="NombreItinerario"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="UOrganizacional_Id"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="NumeroItinerario"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="RutJefe"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="SociedadContratante_Id"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Local"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Cargo_Id"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="FamiliaCargo"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Escuela"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Reprobadas"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Area"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Avance"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Cantidad"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Area_Id"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Fila"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Procesado"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Id"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Cargo"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="VigenciaVersion"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Itinerario_VigenciaHasta"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="UnidadNegocio"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="IdNominaMalla"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="NombreColaborador"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Malla"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Pendientes"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Aprobadas"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Estado"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="VersionMalla"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="NominaActiva"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="UNegocio_Id"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="IdMalla"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="EstadoItinerario"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Local_Codigo"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="EstadoVersion"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="RUT"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Version_VigenciaHasta"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="EstadoColaborador"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="FechaCreacion"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row2" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="Gen" lineStyle="0" metaname="Gen" offsetLabelX="0" offsetLabelY="0" source="tMap_1" target="tFileOutputExcel_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="Gen" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row3" lineStyle="8" metaname="tDBInput_4" offsetLabelX="0" offsetLabelY="0" source="tDBInput_4" target="tMap_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row3" show="false"/>
+  </connection>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileInputDelimited_1" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBConnection_1" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBInput_1" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+</talendfile:ProcessType>

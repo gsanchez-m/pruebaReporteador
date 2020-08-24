@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:TalendProperties="http://www.talend.org/properties">
+  <TalendProperties:Property xmi:id="_JtxSEOFeEeqnEa01cpaLHw" id="_JtovMOFeEeqnEa01cpaLHw" label="PruebaSharepoint" version="0.1" statusCode="" item="_JtxSEuFeEeqnEa01cpaLHw" displayName="PruebaSharepoint">
+    <author href="../talend.project#_-qWVIcd4EeqSd8ppPpX0sw"/>
+    <additionalProperties xmi:id="_Jt2KkOFeEeqnEa01cpaLHw" key="created_product_fullname" value="Talend Open Studio for Data Integration"/>
+    <additionalProperties xmi:id="_Jt2KkeFeEeqnEa01cpaLHw" key="created_product_version" value="7.3.1.20200219_1130"/>
+    <additionalProperties xmi:id="_Jt2KkuFeEeqnEa01cpaLHw" key="created_date" value="2020-08-18T11:21:48.345-0400"/>
+    <additionalProperties xmi:id="_Jt2Kk-FeEeqnEa01cpaLHw" key="modified_product_fullname" value="Talend Open Studio for Data Integration"/>
+    <additionalProperties xmi:id="_Jt2KlOFeEeqnEa01cpaLHw" key="modified_product_version" value="7.3.1.20200219_1130"/>
+    <additionalProperties xmi:id="_Jt2KleFeEeqnEa01cpaLHw" key="modified_date" value="2020-08-18T11:21:48.345-0400"/>
+  </TalendProperties:Property>
+  <TalendProperties:ItemState xmi:id="_JtxSEeFeEeqnEa01cpaLHw" path=""/>
+  <TalendProperties:ProcessItem xmi:id="_JtxSEuFeEeqnEa01cpaLHw" property="_JtxSEOFeEeqnEa01cpaLHw" state="_JtxSEeFeEeqnEa01cpaLHw">
+    <process href="PruebaSharepoint_0.1.item#/"/>
+  </TalendProperties:ProcessItem>
+</xmi:XMI>

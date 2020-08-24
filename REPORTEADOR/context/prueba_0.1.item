@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ContextType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:id="_jYs4oOYTEeqOfrfpibiKSQ" confirmationNeeded="false" name="Default">
+  <contextParameter xmi:id="_jYs4oeYTEeqOfrfpibiKSQ" comment="" name="prueba_MDM_Username" prompt="prueba_MDM_Username?" promptNeeded="false" type="id_String" value="user"/>
+  <contextParameter xmi:id="_jYs4ouYTEeqOfrfpibiKSQ" comment="" name="prueba_MDM_Password" prompt="prueba_MDM_Password?" promptNeeded="false" type="id_Password" value="enc:system.encryption.key.v1:lL83lB8s+9KaBuIg/0qC9GaPR0B5B+IVWmF80v67zhav/ZRh4g=="/>
+  <contextParameter xmi:id="_jYs4o-YTEeqOfrfpibiKSQ" comment="" name="prueba_MDM_URL" prompt="prueba_MDM_URL?" promptNeeded="false" type="id_String" value="http://localhost:8180/talendmdm/services/soap"/>
+</talendfile:ContextType>

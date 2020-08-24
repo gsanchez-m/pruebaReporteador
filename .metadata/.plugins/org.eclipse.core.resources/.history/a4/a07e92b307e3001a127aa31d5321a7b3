@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ContextType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:id="_SwF_MNDsEeqVzcFIj8LQEQ" confirmationNeeded="false" name="test">
+  <contextParameter xmi:id="_SwH0YNDsEeqVzcFIj8LQEQ" comment="host?" name="host" prompt="host?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_SwH0YdDsEeqVzcFIj8LQEQ" comment="port?" name="port" prompt="port?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_SwH0YtDsEeqVzcFIj8LQEQ" comment="database?" name="database" prompt="database?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_SwH0Y9DsEeqVzcFIj8LQEQ" comment="username?" name="username" prompt="username?" promptNeeded="false" type="id_String" value=""/>
+  <contextParameter xmi:id="_SwH0ZNDsEeqVzcFIj8LQEQ" comment="password?" name="password" prompt="password?" promptNeeded="false" type="id_Password" value=""/>
+  <contextParameter xmi:id="_SwH0ZdDsEeqVzcFIj8LQEQ" comment="file" name="filename" prompt="filename?" promptNeeded="false" type="id_String" value="C:/TEMP/conexionHCMSmuProd.txt"/>
+</talendfile:ContextType>

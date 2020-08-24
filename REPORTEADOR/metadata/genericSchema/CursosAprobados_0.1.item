@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010">
+  <TalendMetadata:GenericSchemaConnection xmi:id="_UejMkOLpEeqEPOKBHSynMg" comment="connectionComment" label="connectionLabel" dataPackage="_UekasOLpEeqEPOKBHSynMg" mappingTypeUsed="true" mappingTypeId="id_MSSQL"/>
+  <TalendMetadata:GenericPackage xmi:id="_UekasOLpEeqEPOKBHSynMg" dataManager="_UejMkOLpEeqEPOKBHSynMg">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_UelBwOLpEeqEPOKBHSynMg" label="metadata">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_UelBweLpEeqEPOKBHSynMg" name="RUT" id="12" label="RUT" length="-1" precision="-1" sourceType="VARCHAR" talendType="id_String">
+        <initialValue xmi:id="_UeosIOLpEeqEPOKBHSynMg"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_UeosIeLpEeqEPOKBHSynMg" name="Nombre_Colaborador" id="13" label="Nombre_Colaborador" length="-1" precision="-1" sourceType="VARCHAR" talendType="id_String">
+        <initialValue xmi:id="_UeosIuLpEeqEPOKBHSynMg"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_UeosI-LpEeqEPOKBHSynMg" name="Nombre_Curso" id="14" label="Nombre_Curso" length="-1" precision="-1" sourceType="VARCHAR" talendType="id_String">
+        <initialValue xmi:id="_UeosJOLpEeqEPOKBHSynMg"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_UeosJeLpEeqEPOKBHSynMg" name="Nota" id="15" label="Nota" length="-1" precision="-1" sourceType="VARCHAR" talendType="id_String">
+        <initialValue xmi:id="_UeosJuLpEeqEPOKBHSynMg"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_UeosJ-LpEeqEPOKBHSynMg" name="Estado" id="16" label="Estado" length="-1" precision="-1" sourceType="VARCHAR" talendType="id_String">
+        <initialValue xmi:id="_UeosKOLpEeqEPOKBHSynMg"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_UeosKeLpEeqEPOKBHSynMg" name="Horas_Curso" id="17" label="Horas_Curso" length="-1" precision="-1" sourceType="VARCHAR" talendType="id_String">
+        <initialValue xmi:id="_UeosKuLpEeqEPOKBHSynMg"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_UeosK-LpEeqEPOKBHSynMg" name="Modalidad" id="18" label="Modalidad" length="-1" precision="-1" sourceType="VARCHAR" talendType="id_String">
+        <initialValue xmi:id="_UeosLOLpEeqEPOKBHSynMg"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_UeosLeLpEeqEPOKBHSynMg" name="Fecha_situacion_final" id="19" label="Fecha_situacion_final" length="-1" precision="-1" sourceType="VARCHAR" talendType="id_String">
+        <initialValue xmi:id="_UeosLuLpEeqEPOKBHSynMg"/>
+      </feature>
+    </ownedElement>
+  </TalendMetadata:GenericPackage>
+</xmi:XMI>
